@@ -37,3 +37,8 @@ StageNum ステージ番号の出力
 Title タイトル画面  
 
 # プレイ動画
+
+https://github.com/RyoyaMaejima/2D-action/assets/95085279/9608d0f4-3d25-4650-a2f5-11bd646d99a9
+
+
+
