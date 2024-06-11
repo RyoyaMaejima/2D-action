@@ -1,11 +1,12 @@
 # 2D-action
-Unityでゲームの個人開発をおこないました。
+Unityでゲームの個人開発をおこないました。  
 内容は、騎士がドラゴンの炎をよけながら、障害物をジャンプで乗り越え、剣でドラゴンを倒してゴールを目指す2Dアクションゲームです。
-[Unityroom](https://unityroom.com/games/knights_clash_battle_against_the_dragon
-)からプレイ可能です。
+[Unityroom](https://unityroom.com/games/knights_clash_battle_against_the_dragon)からプレイ可能です。
 # ディレクトリ構成
 Script内にソースコード一式を載せています。  
-Boss:ボス  
+以下が各ファイルの説明。  
+  
+Boss ボス  
 BossAttack ボスの攻撃（炎）  
 ClearEffect クリア演出の出力  
 ClearFrame クリアポイントの周りに存在し、クリアすると消えるオブジェクト  
