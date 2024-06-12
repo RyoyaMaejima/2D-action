@@ -38,7 +38,8 @@ Title タイトル画面
 
 # プレイ動画
 
-https://github.com/RyoyaMaejima/2D-action/assets/95085279/9608d0f4-3d25-4650-a2f5-11bd646d99a9
 
+
+https://github.com/RyoyaMaejima/2D-action/assets/95085279/d53d43d0-c8b2-4552-9fc4-4524ce48f9ed
 
 
