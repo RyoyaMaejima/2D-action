@@ -2,7 +2,7 @@
 Unityでゲームの個人開発をおこないました。  
 内容は、騎士がドラゴンの炎をよけながら、障害物をジャンプで乗り越え、剣でドラゴンを倒してゴールを目指す2Dアクションゲームです。  
 [Unityroom](https://unityroom.com/games/knights_clash_battle_against_the_dragon)からプレイ可能です。
-プロジェクトファイルとプレイ動画は[GoogleDrive]()から入手可能です。
+プロジェクトファイルとプレイ動画は[GoogleDrive](https://drive.google.com/drive/folders/1JYnQk-dpob_iugApE51ZevIYpvUeJBAz?usp=sharing)から入手可能です。
 本リポジトリから実行ファイルを入手した場合は、2Daction_Dataのzipファイルを解凍してください。  
   
 操作方法　←, →　移動、↑　ジャンプ、↓　前転、space　剣で攻撃  
