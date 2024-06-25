@@ -5,7 +5,7 @@ Unityでゲームの個人開発をおこないました。
 プロジェクトファイルとプレイ動画は[GoogleDrive](https://drive.google.com/drive/folders/1JYnQk-dpob_iugApE51ZevIYpvUeJBAz?usp=sharing)から入手可能です。
 本リポジトリから実行ファイルを入手した場合は、2Daction_Dataのzipファイルを解凍してください。  
   
-操作方法　←, →　移動、↑　ジャンプ、↓　前転、space　剣で攻撃  b　ポーズ画面を開く
+操作方法　←, →　移動、↑　ジャンプ、↓　前転、space　剣で攻撃、  b　ポーズ画面を開く
 
 # 開発目的
 ゲームを0から自分で制作することで、ゲーム開発全体の流れを理解すること  
