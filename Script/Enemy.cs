@@ -53,6 +53,7 @@ public class Enemy : MonoBehaviour
         
         if(!oc[0].playerAttack)
         {
+            //画面に映ったときだけ行動
             if(sr.isVisible || nonVisibleAct)
             {
                 walkTime += Time.deltaTime;

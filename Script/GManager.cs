@@ -15,6 +15,7 @@ public class GManager : MonoBehaviour
     [HideInInspector] public bool isGameOver = false;
     [HideInInspector] public bool isStageClear = false;
     [HideInInspector] public bool isTimeAdvance = false;
+    [HideInInspector] public bool isPause = false;
     [HideInInspector] public float gameTime = 0.0f;
 
     private AudioSource audioSource = null;
@@ -98,6 +99,7 @@ public class GManager : MonoBehaviour
     /// </summary>
     public void RetryGame()
     {
+        isPause = false;
         isGameOver = false;
         hp = defaultHp;
         heartNum = defaultHeartNum;

@@ -43,6 +43,7 @@ public class ClearFrame : MonoBehaviour
                 blinkTime = 0f;
                 continueTime = 0f;
                 sr.enabled = true;
+                //明滅終わったら消える
                 Destroy(this.gameObject);
             }
             else

@@ -14,6 +14,7 @@ public class PlayerCollsionCheck : MonoBehaviour
     private string hitAreaTag = "HitArea";
     private string moveFloorTag = "MoveFloor";
 
+    //敵や動く床との接触判定
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.tag == enemyTag)

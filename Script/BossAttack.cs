@@ -66,6 +66,7 @@ public class BossAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
 	{
+        //プレイヤーに当たったら消える
         if(collision.tag == playerTag)
         {
             Destroy(this.gameObject);

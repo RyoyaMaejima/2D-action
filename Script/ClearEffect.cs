@@ -21,11 +21,13 @@ public class ClearEffect : MonoBehaviour
     {
         if (!comp)
         {
+            //クリア演出
             if(timer < 1.0f)
             {
                 transform.localScale = Vector3.one * curve.Evaluate(timer);             
                 timer += Time.deltaTime;
             }
+            //クリアしたら次のステージへ
             else
             {
                 transform.localScale = Vector3.one;

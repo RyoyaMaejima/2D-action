@@ -13,6 +13,7 @@ public class EnemyTriggerCheck : MonoBehaviour
     private string enemyTag = "Enemy";
     private string reflectTag = "Reflect";
 
+    //壁や敵との接触判定
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == groundTag || collision.tag == enemyTag || collision.tag == reflectTag)

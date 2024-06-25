@@ -36,6 +36,7 @@ public class ContinuePoint : MonoBehaviour
 
         if(on)
         {
+            //コンティニューポイントを通った時の演出
             if (kakudo < 180.0f)
             {
                 transform.position = defaultPos + Vector3.up * moveDis * Mathf.Sin(kakudo * Mathf.Deg2Rad);

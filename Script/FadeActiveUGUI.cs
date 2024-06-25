@@ -31,6 +31,7 @@ public class FadeActiveUGUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //メッセージの演出
         if(triger.isOn)
         {
             if(cg.transform.position.y < defaltPos.y || cg.alpha < 1.0f)

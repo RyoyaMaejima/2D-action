@@ -41,6 +41,9 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 敵の向きに合わせて攻撃方向を設定
+    /// </summary>
     public void Revolution(bool rightTleftF)
     {
         if(rightTleftF)

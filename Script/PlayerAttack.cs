@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     private string enemyTag = "Enemy";
 
+    //攻撃が敵に当たったか判定
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == enemyTag)

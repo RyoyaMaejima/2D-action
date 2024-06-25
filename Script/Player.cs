@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!isDown && !GManager.instance.isGameOver && !GManager.instance.isStageClear)
+        if(!isDown && !GManager.instance.isPause && !GManager.instance.isGameOver && !GManager.instance.isStageClear)
         {
             //各種当たり判定を得る
             isDeadArea = checkCollision.isDeadArea;

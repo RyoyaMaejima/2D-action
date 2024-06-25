@@ -7,8 +7,10 @@ public class StageCtrl : MonoBehaviour
 {
     [Header("プレイヤーゲームオブジェクト")] public GameObject playerObj;
     [Header("コンティニュー位置")] public GameObject[] continuePoint;
+    [Header("ポーズ")] public GameObject pauseObj;
     [Header("ゲームオーバー")] public GameObject gameOverObj;
     [Header("フェード")] public FadeImage fade;
+    [Header("ポーズ時に鳴らすSE")] public AudioClip pauseSE;
     [Header("ゲームオーバー時に鳴らすSE")] public AudioClip gameOverSE;
     [Header("ステージクリアーSE")] public AudioClip stageClearSE;
     [Header("ステージクリア")] public GameObject stageClearObj;
@@ -27,6 +29,7 @@ public class StageCtrl : MonoBehaviour
     {
         if(playerObj != null && continuePoint != null && continuePoint.Length > 0 && gameObject !=  null && fade != null && stageClearObj != null)
         {
+            pauseObj.SetActive(false);
             gameOverObj.SetActive(false);
             stageClearObj.SetActive(false);
             playerObj.transform.position = continuePoint[0].transform.position;
@@ -45,8 +48,16 @@ public class StageCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ポーズ時の処理
+        if(Input.GetKeyDown(KeyCode.B) && fade.IsFadeInComplete())
+        {
+            Time.timeScale = 0f;
+            pauseObj.SetActive(true);
+            GManager.instance.PlaySE(pauseSE);
+            GManager.instance.isPause = true;
+        }
         //ゲームオーバー時の処理
-        if(GManager.instance.isGameOver && !doGameOver)
+        else if(GManager.instance.isGameOver && !doGameOver)
         {
             gameOverObj.SetActive(true);
             GManager.instance.PlaySE(gameOverSE);
@@ -94,10 +105,22 @@ public class StageCtrl : MonoBehaviour
     }
 
     /// <summary>
+    /// ポーズを終了する
+    /// </summary>
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+        pauseObj.SetActive(false);
+        GManager.instance.isPause = false;
+    }
+
+    /// <summary>
     /// 最初から始める
     /// </summary>
     public void Retry()
     {
+        Time.timeScale = 1f;
+        pauseObj.SetActive(false);
         ChangeScene(0); //タイトル画面に戻る
         retryGame = true;
     }

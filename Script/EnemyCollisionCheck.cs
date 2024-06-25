@@ -8,6 +8,7 @@ public class EnemyCollisionCheck : MonoBehaviour
     [HideInInspector] public Collision2D other = null;
     private string moveFloorTag = "MoveFloor";
 
+    //動く床との接触判定
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.tag == moveFloorTag)
